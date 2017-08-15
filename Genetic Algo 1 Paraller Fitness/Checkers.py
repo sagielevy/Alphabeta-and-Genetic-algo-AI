@@ -4,8 +4,8 @@ import logging
 
 gene_pool = {"000": 0, "001": 1, "010": 2, "011": 3, "100": 4, "101": 5, "110": 6, "111": 7}
 chrom_size = 4
-goal = 10000  # Just a really high number, our goal here is to get the HIGHEST possible score, there's no perfect match
 members = 20
+goal = (members - 1) * 2  # The most a single solution can achieve
 values = []
 
 
